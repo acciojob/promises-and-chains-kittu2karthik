@@ -3,9 +3,9 @@ const ageEl = document.querySelector('#age');
 const nameEl = document.querySelector('#name');
 
 formEl.addEventListener("submit", (event) => {
-  event.preventDefault(); 
+  event.preventDefault();
   if (ageEl.value === '' || nameEl.value === '') {
-    alert("Please enter valid details.");
+    alert("Please enter valid details");
     return;
   }
 
@@ -17,7 +17,7 @@ formEl.addEventListener("submit", (event) => {
       if (age > 18) {
         resolve(`Welcome, ${name}. You can vote.`);
       } else {
-        reject(`Oh sorry, ${name}. You aren't old enough.`);
+        reject(`Oh sorry ${name}. You aren't old enough.`);
       }
     }, 4000);
   });
